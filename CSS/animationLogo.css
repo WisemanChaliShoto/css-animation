@@ -1,0 +1,23 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+.Image:hover{
+   position:relative;
+    animation-name: Linked;
+    animation-duration: 7s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes Linked {
+    0% {filter: blur(5px); left: 0px; top: 0px;}
+    25% {filter: blur(10px);left: 300px; top: 0px;}
+    50% {filter: blur(0px);left: 300px; top:300px}
+    75% {filter: blur(20px); left: 0px; top: 300px;}
+    100% {filter: blur(30px); left: 0px; top: 0px;}
+}
+
